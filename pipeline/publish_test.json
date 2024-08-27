@@ -31,7 +31,12 @@
 				"inputs": [
 					{
 						"referenceName": "parameter_ds",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"System": "adfproject",
+							"director": "input",
+							"filename": "SalesLTProduct.txt"
+						}
 					}
 				]
 			}
