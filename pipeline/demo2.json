@@ -17,8 +17,14 @@
 				"typeProperties": {
 					"notebookPath": "/Users/arun.6feb@outlook.com/Notebook_01",
 					"baseParameters": {
-						"Number": "20",
-						"tablename": "sales_lt_product1"
+						"Number": {
+							"value": "@pipeline().parameters.Num_para",
+							"type": "Expression"
+						},
+						"tablename": {
+							"value": "@pipeline().parameters.tab_para",
+							"type": "Expression"
+						}
 					}
 				},
 				"linkedServiceName": {
@@ -27,6 +33,14 @@
 				}
 			}
 		],
+		"parameters": {
+			"Num_para": {
+				"type": "String"
+			},
+			"tab_para": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
